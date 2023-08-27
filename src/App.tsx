@@ -1,23 +1,61 @@
 import './App.css';
+import { BrowserRouter  , Route  , RouterProvider, Routes, createBrowserRouter} from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Users from './pages/Users/Users';
+import Products from './pages/Products/Products';
+import Layout from './Layout';
 
-function App() {
+const App = () => {
+
+
+
+  const router = createBrowserRouter([
+    {
+      path:"/",
+      element : < Layout />,
+      children : [
+        {
+          path: "/",
+          element: (<Home />)
+        },
+        {
+          path: "users",
+          element: (<Home />)
+        },  
+        {
+          path: "/",
+          element: (<Users />)
+        },
+        {
+          path: "/products",
+          element: (<Products />)
+        },
+      ]
+    }
+  ])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={router}/>
   );
+
+
+//  return (
+//     <div>
+//       <BrowserRouter>
+//        <div className="App">
+//         <main>  
+//           <Routes>             
+//             <Route path="/" element={<Home/>}/>
+//             <Route path="/users" element={<Users />}/>  
+//             <Route path="/products" element={<Products/>}/>
+//           </Routes>
+//         </main>
+//        </div>
+//       </BrowserRouter>
+//     </div>
+   
+//   )
 }
 
 export default App;
