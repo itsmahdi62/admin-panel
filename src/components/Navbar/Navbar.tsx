@@ -6,7 +6,7 @@ const Navbar = () => {
     return ( <div className="navbar">
         <div  className="logo">
             <img src="logo.svg" alt="" />
-            <span>lamadmin</span>
+            <span>Admin Panel</span>
         </div>
         <div className="icons">
             <AiOutlineSearch />
