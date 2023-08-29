@@ -179,7 +179,7 @@ export const chartBoxRevenue = {
     ]
 }
 export const chartBoxProduct = {
-    color: "gold",
+    color: "#aa47b5",
     icon:"/conversionIcon.svg",
     title:"Total Ratio",
     number: 45,
@@ -193,5 +193,80 @@ export const chartBoxProduct = {
         { name : "Thu" , product:800},
         { name : "Fri" , product:550},
         { name : "Sat" , product:450},
+    ]
+}
+
+
+
+
+export const barChartBoxVisit = {
+    title: "Total Visit",
+    color: "#FF8042",
+    dataKey: "visit",
+    chartData : [
+        {
+            name: "Sun",
+            visit:4000,
+        },
+        {
+            name: "Mon",
+            visit:1000,
+        },
+        {
+            name: "Tue",
+            visit:4000,
+        },
+        {
+            name: "Wed",
+            visit:3000,
+        },
+        {
+            name: "Thu",
+            visit:5000,
+        },
+        {
+            name: "Fri",
+            visit:4500,
+        },
+        {
+            name: "Sat",
+            visit:4500,
+        },
+    ]
+}
+
+export const barChartBoxRevenue = {
+    title: "Total Profit",
+    color: "#FF8042",
+    dataKey: "profit",
+    chartData : [
+        {
+            name: "Sun",
+            profit:4000,
+        },
+        {
+            name: "Mon",
+            profit:1000,
+        },
+        {
+            name: "Tue",
+            profit:4000,
+        },
+        {
+            name: "Wed",
+            profit:3000,
+        },
+        {
+            name: "Thu",
+            profit:5000,
+        },
+        {
+            name: "Fri",
+            profit:4500,
+        },
+        {
+            name: "Sat",
+            profit:4500,
+        },
     ]
 }
