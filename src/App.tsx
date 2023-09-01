@@ -21,12 +21,8 @@ const App = () => {
         },
         {
           path: "users",
-          element: (<Home />)
-        },  
-        {
-          path: "/",
           element: (<Users />)
-        },
+        },  
         {
           path: "/products",
           element: (<Products />)
