@@ -24,7 +24,16 @@ const columns: GridColDef[] = [
         editable: true,
     },
     {
-      field :"Actions" , headerName:"Avatar" ,width:100,
+      field: 'fullName',
+      headerName: 'Full name',
+      description: 'This column has a value getter and is not sortable.',
+      sortable: false,
+      width: 160,
+      valueGetter: (params: GridValueGetterParams) =>
+        `${params.row.firstName || ''} ${params.row.lastName || ''}`,
+    },
+    {
+      field :"Actions" , headerName:"Actions" ,width:100,
       renderCell:(params) =>{
          return <div className="actions">
             <div className="view">View</div>
@@ -39,15 +48,7 @@ const columns: GridColDef[] = [
       width: 110,
       editable: true,
     },
-    {
-      field: 'fullName',
-      headerName: 'Full name',
-      description: 'This column has a value getter and is not sortable.',
-      sortable: false,
-      width: 160,
-      valueGetter: (params: GridValueGetterParams) =>
-        `${params.row.firstName || ''} ${params.row.lastName || ''}`,
-    },
+    
     {
         field:"status" , headerName:"Verified",width:100,type:"boolean"
     },
@@ -72,7 +73,7 @@ const Users = () => {
             <h1>Users</h1>
             <button>Add New User</button>
         </div>
-        <DataTable columns={columns} rows={usersDeatails} />
+        <DataTable slug="users" columns={columns} rows={usersDeatails} />
     </div> );
 }
  
