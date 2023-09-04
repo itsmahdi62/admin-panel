@@ -11,7 +11,7 @@ type Props = {
 const DataTable = (props:Props) => {
 
   const handleDelete = (id:number) =>{
-    return 
+    return id
   }
 
     const actionColumn:GridColDef = {
