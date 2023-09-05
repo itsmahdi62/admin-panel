@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 type Props = {
   columns:GridColDef[],
-  rows:object[],
+  rows:object[] | any,
   slug:string;
 }
 

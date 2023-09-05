@@ -196,9 +196,6 @@ export const chartBoxProduct = {
     ]
 }
 
-
-
-
 export const barChartBoxVisit = {
     title: "Total Visit",
     color: "#FF8042",
@@ -284,3 +281,34 @@ export const usersDeatails = [
     // { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 ,emai:"amiralmasi021@gmail.com" , phone:"09391395538" , verified :true},
     // { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 ,emai:"amiralmasi021@gmail.com" , phone:"09391395538" , verified :true},
   ];
+
+  export const productsRow = [
+    {
+        id:1,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb0P1nfqEPoSUg5MlECyxswxu5XwZSGG3WEfEdYFE&s",
+        title: "headphone",
+        color:"black",
+        producer:"sony",
+        price:"$37.22",
+        createdAt:"01.08.2023",
+    },
+    {
+        id:2,
+        img:"https://storage1.torob.com/backend-api/base/images/So/ud/Soudx5u3cKw9WKKZ.jpg",
+        title: "headphone",
+        color:"black",
+        producer:"samsung",
+        price:"$37.22",
+        createdAt:"01.08.2023",
+    },
+    {
+        id:3,
+        img:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPLT3ref_VW_34FR+watch-44-alum-midnight-nc-se_VW_34FR_WF_CO?wid=2000&hei=2000&fmt=png-alpha&.v=1683237043713",
+        title: "headphone",
+        color:"black",
+        producer:"apple",
+        price:"$37.22",
+        createdAt:"01.08.2023",
+        inStock: true,
+    },
+  ]
