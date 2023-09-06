@@ -22,43 +22,7 @@ export const menu = [
         title : "lists",
         listItems:[
             {
-                id : 2 , 
-                title : "Users",
-                url : "/users",
-                icon : "user.svg"
-            },
-            {
-                id : 2 , 
-                title : "Products",
-                url : "/products",
-                icon : "product.svg"
-            },
-        ],
-    },
-    {
-        id: 3 ,
-        title : "lists",
-        listItems:[
-            {
-                id : 2 , 
-                title : "Users",
-                url : "/users",
-                icon : "user.svg"
-            },
-            {
-                id : 2 , 
-                title : "Products",
-                url : "/products",
-                icon : "product.svg"
-            },
-        ],
-    },
-    {
-        id: 4 ,
-        title : "lists",
-        listItems:[
-            {
-                id : 2 , 
+                id : 1 , 
                 title : "Users",
                 url : "/users",
                 icon : "user.svg"
