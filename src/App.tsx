@@ -5,6 +5,8 @@ import Users from './pages/Users/Users';
 import Products from './pages/Products/Products';
 import Layout from './Layout';
 import Login from './pages/Login/Login';
+import User from './pages/User/User';
+import Product from './pages/Product/Product';
 
 const App = () => {
 
@@ -26,6 +28,14 @@ const App = () => {
         {
           path: "/products",
           element: (<Products />)
+        },
+        {
+          path: "/users/:id",
+          element: (<User />)
+        },
+        {
+          path: "/products/:id",
+          element: (<Product />)
         },
       ]
     },
