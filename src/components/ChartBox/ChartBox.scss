@@ -1,19 +1,35 @@
+@import "../../responsive.scss";
 .chartBox{
     display: flex;
     height: 100%;
+    @include xxl{
+     flex-direction: column;
+    }
 
     .boxInfo{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         flex: 3;
+
+        @include sm{
+            gap: 20px;
+        }
+
         .title{
             display: flex;
             align-items: center;
             gap: 10px;
+            @include xxl{
+                font-size: 12px;
+            }
+    }
+    h1{
+        @include xxl{
+            font-size: 14px;
         }
     }
-
+}
     .chartInfo{
         flex:2;
         display: flex;
@@ -31,6 +47,9 @@
             text-align: right;
 
             .percentage{
+                @include xxl{
+                    font-size: 16px;
+                }
                 font-weight: bold;
                 font-size: 20px;
             }
